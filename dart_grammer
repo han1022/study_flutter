@@ -31,3 +31,22 @@ String sayHello(String potato) => "Hello $potato nice to meet you";
 //이 둘이 같은거
 named arguments
 -> 사용법은 중괄호 안에 쓰기
+??
+-> left ?? right 일 때 left가 null이면 right를 할당함
+??=
+-> left ??= right 일 때 ?? 이 기호 쓰는 거랑 똑같음
+abstract
+-> 추상화 클래스, extends를 사용해서 상속할 수 있음. 근데 이걸 사용하려면 그 class 안에 abstract class 안에서 사용하는 method를 선언해줘야함
+ex)
+abstract class Human{
+  void walk();
+}
+class Player extends Human {
+  void walk() {
+    print("I'm walking");
+  }
+}
+super
+-> 확장한 부모 클래스에게 보내줌 //this랑 반대라고 생각하면 좀 쉬울듯
+with
+-> 상속과는 다른 개념, 근데 다른 클래스의 property와 method를 긁어올 수 있음, 여러번 재사용이 가능하며 생성자가 없는 
